@@ -1,0 +1,45 @@
+/* Candice Carter
+March 17th, 2021
+cosc 220 
+checkpoint 3.246*/
+
+/** This program prints out the word One, Two, or Three for user input of 1, 2, or 3*/
+
+import java.util.Scanner;
+
+public class Checkpoint 
+{
+     public static void main(String[] args)
+     {
+     
+     //Create scanner object
+     Scanner keyboard = new Scanner(System.in);
+     
+     //Get user input
+     System.out.println("Enter one of the numbers " + "1, 2, or 3: ");
+     
+     byte userNum = keyboard.nextByte();
+     
+     String userString;
+     
+     //Sets user input 1, 2, or 3 equal to word one two or three
+     switch(userNum) {
+     case 1: userString = "One";
+          break;
+     
+     case 2: userString = "Two";
+          break;
+     
+     case 3: userString = "Three";
+          break;
+     
+     //displayed when user input was inequal to 1, 2, or 3 
+     default : userString = "Invalid data, expect value from 1 - 3";
+          break;
+          
+          }
+          
+          System.out.println( userNum + " is " + userString + ".");
+     }
+     
+}
